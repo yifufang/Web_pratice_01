@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>survery-form</Title>
+    <link rel="stylesheet" href="Survey_Form.css">
+</head>
+
+<body id= "main">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+
+    <form id="survey-form">
+        <label id="name-label" for="name" class="labels">Name</label><br>
+        <input type="name" id="name" name="name" class="text-box"  required placeholder="Full Name"><br>
+        <label id="email-label" for="email"class="labels">Email</label><br>
+        <input type="email" id="email" name="email" class="text-box" required placeholder="example@mail.com"><br>
+        <label id="number-label" for="number"class="labels">Age(optional)</label><br>
+        <input type="number" id="number" name="number"class="text-box" min="5"max="99" placeholder="12+"><br>
+        
+        <label for="dropdown">Which option best describes your current role?</label><br>
+        <select id="dropdown" name="role" class="text-box">
+            <option value="Student">Student</option>
+            <option value="full-time job">Full-time job</option>
+            <option value="Part-time learner">Part-time learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+        <p id="radio-text">Would you recommend freeCodeCamp to a friend?</p>
+        <label for="radios" class="radios">
+            <input type="radio"class="radios" name="radios" value="Definitely">Definitely
+        </label><br>
+        <label for="radios" class="radios">
+            <input type="radio"class="radios" name="radios"value="Maybe">Maybe
+        </label><br>
+        <label for="radios" class="radios">
+            <input type="radio"class="radios" name="radios" value="Not sure">Not sure
+        </label>
+
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label><input type="checkbox" class="check-boxes" name="check-boxes" value="Front-end Projects">Front-end Projects</label><br>
+        <label><input type="checkbox" class="check-boxes" name="check-boxes" value="Back-end Projects">Back-end Projects</label><br>
+        <label><input type="checkbox" class="check-boxes" name="check-boxes" value="Data Visualization">Data Visualization</label><br>
+        <label><input type="checkbox" class="check-boxes" name="check-boxes" value="Challenges">Challenges</label><br>
+        <label><input type="checkbox" class="check-boxes" name="check-boxes" value="Open Source Community">Open Source Community</label><br>
+        <label><input type="checkbox" class="check-boxes" name="check-boxes" value="Gitter help rooms">Gitter help rooms</label><br>
+        <label><input type="checkbox" class="check-boxes" name="check-boxes" value="Videos">Videos</label><br>
+        <label><input type="checkbox" class="check-boxes" name="check-boxes" value="City Meetups">City Meetups</label><br>
+        <label><input type="checkbox" class="check-boxes" name="check-boxes" value="Wiki">Wiki</label><br>
+        <label><input type="checkbox" class="check-boxes" name="check-boxes" value="Forum">Forum</label><br>
+        <label><input type="checkbox" class="check-boxes" name="check-boxes" value="Additional Courses">Additional Courses</label><br>
+        <div class="blocks">
+            <label for="comment" id="comment-text">Any comments or suggestions?</label><br>
+            <textarea id="comment" name="comment" class="text-box"placeholder="Enter your comment here"></textarea>
+        </div>
+        <br><input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
