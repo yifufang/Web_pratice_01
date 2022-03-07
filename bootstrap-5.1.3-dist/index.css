@@ -1,0 +1,52 @@
+#collapsibleNavbar{
+    margin-left: 4%;
+}
+#nav_D{
+    margin-bottom: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+#indicators_D{
+    margin-bottom:50px;
+    gap: 30px;
+}
+.indicator_D{
+    height: 5px;
+    width: 50px;
+    border: 0ch;
+    color: rgba(168, 168, 168, 0.637);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+#titles{
+    position: absolute;
+    z-index: 1;
+    top:30%;
+    left: 50%;
+    color: white;
+    text-shadow: 2px 1px black;
+    border-bottom: solid 2px rgb(255, 255, 255);
+}
+@media (max-width:550px) {
+    #titles{
+        top:20%;
+        left:10%;
+    }
+}
+#phone{
+    font-size: 40px;
+}
+#container1_D > h1{
+    text-align: center;
+}
+#container1_D > p{
+    text-align: center;
+    color: #32829B;
+}
+#button_D{
+    width: 200px;
+}
+td > a{
+    color: black;
+}
+input{
+    width: 100%;
+}
